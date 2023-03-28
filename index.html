@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title></title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="style.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+   <div id="nav">
+      <ul class="n1">
+         <li><a href="#">Home</a></li>
+
+         <li onmouseover="div(1)" onmouseleave="func(1)"><a href="#">Trading Tools</a>
+            <div id="tt">
+               <ul>
+                  <li>TradingView</li>
+                  <li>NinjaTrade</li>
+                  <li>TradeStation</li>
+               </ul>
+            </div>
+         </li>
+         <li onmouseover="div(2)" onmouseleave="func(2)"><a href="#">Screeners</a>
+            <div id="sc">
+               <ul>
+                  <li>Criteria</li>
+                  <li>Volume</li>
+                  <li>Finviz</li>
+                  <li>Yahoo Finance</li>
+               </ul>
+            </div>
+         </li>
+         <li onmouseover="div(3)" onmouseleave="func(3)"><a href="#">Stock Market</a>
+            <div id="sm">
+               <ul>
+                  <li>MetaStock</li>
+                  <li>Charts</li>
+                  <li>Portfolio</li>
+               </ul>
+            </div>
+         </li>
+         <li onmouseover="div(4)" onmouseleave="func(4)"><a href="#">Analysis Tools</a>
+            <div id="at">
+               <ul>
+                  <li>Ratio analysis</li>
+                  <li>Fundamental analysis</li>
+               </ul>
+            </div>
+         </li>
+         <li onmouseover="div(5)" onmouseleave="func(5)"><a href="#">Services</a>
+            <div id="ser">
+               <ul>
+                  <li>Fintech services</li>
+                  <li>Accounting</li>
+               </ul>
+            </div>
+         </li>
+         <li onmouseover="div(6)" onmouseleave="func(6)"><a href="#">Contact Us</a>
+            <div id="con">
+               <a href="#" target="blank"><i class="fa fa-envelope"></i> EMAIL</a><br>
+               <a href="#" target="blank"><i class="fab fa-twitter"></i> TWITTER</a><br>
+               <a href="#" target="blank"><i class="fab fa-instagram"></i> INSTAGRAM</a><br>
+            </div>
+      </ul>
+      </li>
+   </div>
+   <div id="over">
+      <div id="overview">
+         <h2>Deepen your understanding of <b class="blue">Financial concepts</b></h2>
+         <h1><b class="blue">Advance</b> your financial proficiency through continued <b class="blue">Education</b></h1>
+         <p>Strengthen your grasp of financial principles<br>Expand your financial expertise through additional studies
+         </p>
+         <button id="btn1">Get Started</button>
+         <button id="btn2">Free Trail</button>
+         <br>
+         <div id="icons">
+            <i class="fas fa-book-reader" style="font-size: 22px;color:cadetblue"></i> Break-even analysis
+            <i class="fas fa-chart-line" style="font-size: 22px;color:burlywood"></i>Crisis management
+            <i class="fas fa-piggy-bank" style="font-size: 22px;color:cornflowerblue"></i>Risk mitigation
+         </div>
+      </div>
+      <div id="pic"></div>
+   </div>
+</body>
+<script>
+   function div(opt) {
+      if (opt == 1)
+         document.getElementById('tt').style.display = 'block';
+      else if (opt == 2)
+         document.getElementById('sc').style.display = 'block';
+      else if (opt == 3)
+         document.getElementById('sm').style.display = 'block';
+      else if (opt == 4)
+         document.getElementById('at').style.display = 'block';
+      else if (opt == 5)
+         document.getElementById('ser').style.display = 'block';
+      else if (opt == 6)
+         document.getElementById('con').style.display = 'block';
+   }
+   function func(opt) {
+      if (opt == 1)
+         document.getElementById('tt').style.display = 'none';
+      else if (opt == 2)
+         document.getElementById('sc').style.display = 'none';
+      else if (opt == 3)
+         document.getElementById('sm').style.display = 'none';
+      else if (opt == 4)
+         document.getElementById('at').style.display = 'none';
+      else if (opt == 5)
+         document.getElementById('ser').style.display = 'none';
+      else if (opt == 6)
+         document.getElementById('con').style.display = 'none';
+   }
+   $(document).ready(function () {
+      $('#btn1').click(function () {
+         alert('WELCOME to World of Finance !');
+      });
+      $('#btn2').click(function () {
+         alert('Enjoy your Free Trail !');
+      })
+   })
+</script>
+
+</html>
